@@ -1,0 +1,25 @@
+import sys  # this allows you to use the sys.exit command to quit/logout of the application
+import time
+import turtle
+import os
+import numpy
+import cv2
+
+
+def triangle_g():
+    screen = turtle.getscreen()
+    turtle.title("My little turtle")
+    lilt = turtle.Turtle()
+
+    turtle.bgcolor("grey")
+
+    u = input("Would you like me to draw a shape? Type yes or no: ")
+    if u == "yes":
+        lilt.speed(1)
+        lilt.goto(-100, -100)
+        lilt.goto(90, -100)
+        ## lilt.home()
+        time.sleep(5)
+        lilt.reset()
+
+triangle_g()
